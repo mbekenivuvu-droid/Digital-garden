@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Interactive Digital Garden</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="night-mode">
+  <!-- Dynamic Sky Elements -->
+  <div class="sky-decor">
+    <div class="celestial-body"></div>
+    <div id="rainContainer" class="rain-container"></div>
+  </div>
+
+  <main class="garden">
+    <h1>My Little Digital Garden</h1>
+    
+    <!-- Controls Toolbar -->
+    <div class="toolbar">
+      <div class="control-group">
+        <label>Type:</label>
+        <select id="flowerType">
+          <option value="classic">Classic Daisy</option>
+          <option value="tulip">Tulip Bloom</option>
+          <option value="star">Star Blossom</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label>Color:</label>
+        <input type="color" id="flowerColor" value="#FF8BC7">
+      </div>
+
+      <button id="plantBtn" class="btn">🌱 Plant</button>
+      <button id="waterBtn" class="btn">💧 Water</button>
+      <button id="modeBtn" class="btn btn-icon">☀️ Day</button>
+      <button id="rainBtn" class="btn btn-icon">🌧️ Rain</button>
+    </div>
+
+    <!-- Flower Bed Container -->
+    <div id="gardenBed" class="garden-bed"></div>
+
+    <!-- Pixel Grass Decor -->
+    <div class="ground-wrapper">
+      <div class="pixel-grass"></div>
+    </div>
+  </main>
+
+  <!-- Hidden Secret Note Modal -->
+  <div id="secretModal" class="modal-overlay">
+    <div class="modal-card">
+      <span class="modal-icon">🌷</span>
+      <p id="modalMessage">You found me.</p>
+      <button id="closeModal" class="btn">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
